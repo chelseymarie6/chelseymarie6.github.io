@@ -3,44 +3,73 @@
   <head>
     <meta charset="utf-8">
     <title>Chelsey Dolan|Web Developer</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Changa+One|Open+Sans:400,400i,700,700i,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <meta name:"viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header>
+    <div class="heading">
       <a href="index.html" id="logo">
         <h1>Chelsey Dolan</h1>
-        <h2>Web Developer</h2>
       </a>
       <nav>
         <ul>
-          <li><a href="index.html">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html" class="selected">Contact</a></li>
         </ul>
       </nav>
+      </div>
     </header>
     <div id="wrapper">
       <section id="primary">
-        <h3>General Information</h3>
-        <p>The best way to get in touch with me is through email.</p>
-        <p>Also, please feel free to call me if you prefer to get in touch that way.</p>
+        <h2>Contact Me</h2>
+        <hr>
+        <div class="container">
+          <form action="/action_page.php">
+
+          <label for="name">Name</label>
+          <input type="text" id="name" name="Fullname" placeholder="John Smith">
+          
+          <label><b>Email</b></label>
+          <input type="text" placeholder="example@gmail.com" name="email" required>
+
+          <label for="subject">Message</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <!-- <form>
+          Name:<br>
+          <input type="name" name="Fullname" value="John Smith" width="100%">
+          <br>
+          Email:<br>
+          <input type="email" name="email" value="example@gmail.com" rows="10" cols="30">
+          <br>
+          Message:<br>
+          <textarea name="message" rows="15" cols="30">
+          </textarea>
+          <br> -->
+          <input id="submit" type="submit" value="Submit">
+        </form>
+        </div>
       </section>
+      
       <section id="secondary">
-        <h3>Contact Details</h3>
+        <h3>Connect with Me</h3>
+        <hr>
         <ul class="contact-info">
-          <li class="phone"><a href="tel:775-722-9120">mobile</a></li>
-          <li class="mail"><a href="mailto:chelseymarie6@gmail.com">gmail</a></li>
+          <li class="git"><a href="https://github.com/chelseymarie6" target="_blank"><img src="img/github.png" alt=""></a></li>
+          
+          <li class="in"><a href="https://www.linkedin.com/in/chelseydolan/" target="_blank"><img src="img/linkedin.png" alt=""></a></li>
+          
+          <li class="stack"><a href="https://stackoverflow.com/users/7949317/chelsey-dolan" target="_blank"><img src="img/stackoverflow.png" alt=""></a></li>
         </ul>
       </section>
+     </div> 
       <footer>
-        <a href="https://www.facebook.com/chelseymarie6"><img src="img/facebook.png" alt="Facebook logo" class="social-icon"></a>
-        <a href="https://www.linkedin.com/in/chelseydolan/"><img src="img/linkedin.png" alt="Linkedin logo" class="social-icon"></a>
-        <p>&copy; 2017 Chelsey Dolan.</p>
+        <span>&copy; 2017 Chelsey Dolan.</span>
       </footer>
-    </div>
+    
+
   </body>
 </html>
